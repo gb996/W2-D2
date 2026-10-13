@@ -117,10 +117,10 @@ console.log(totale)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const array = [42, 'ciao', true];
-if (array[0] === 42) {
-   console.log(' ${array.[i]} e un numero');
-} else if (array[0] !== 42) {
-   console.log('${array.[i]} non e un numero');
+if (typeof array[0] === 23){
+   console.log(`${array[0] } e un numero`)
+}else{
+   console.log(`${array[0] } non e un numero`)
 }
 
 
