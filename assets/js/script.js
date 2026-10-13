@@ -93,6 +93,22 @@ if (a === b && b === c) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let totale;
+
+const prezzo = 20;
+const spedizione = 9.99;
+
+if (prezzo >= 50 ) {
+   console.log(' spedizione gratuita')
+} else if (prezzo < 50) {
+   console.log(`Totale carrello: ${prezzo}€ - Spedizione:${spedizione}€  — Totale finale: ${prezzo + spedizione}€`)
+}
+
+
+totale = prezzo >= '50' ? "spedizione gratuita" : (`Totale carrello: ${prezzo}€ - Spedizione:${spedizione}€  — Totale finale: ${prezzo + spedizione}€`)
+console.log(totale)
+
+
 
 /* ESERCIZIO 7 — typeof check
    Crea un array con 3 valori diversi (es. [42, 'ciao', true]).
@@ -100,12 +116,28 @@ if (a === b && b === c) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const array =[ 42, 'ciao' , true];
+if( array[0] === 42){
+   console.log(' ${array.[i]} e un numero');
+}else if(array[0] !== 42) {
+   console.log('${array.[i]} non e un numero');
+}
+
+
 /* ESERCIZIO 8 — Array dei numeri
    Array vuoto. Aggiungi 1..5 con push. Aggiungi 0 all'inizio con unshift.
    Stampa array e length.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let vuoto=[]
+vuoto.push(1,2,3,4,5)
+
+console.log(vuoto)
+console.log(vuoto.length)
+vuoto.unshift(0)
+console.log(vuoto)
+console.log(vuoto.length)
 
 /* ESERCIZIO 9 — Carrello con splice
    Array ['Penna', 'Quaderno', 'Zaino', 'Astuccio'].
@@ -114,7 +146,10 @@ if (a === b && b === c) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let zaino=['Penna', 'Quaderno', 'Zaino', 'Astuccio']
 
+
+console.log(zaino)
 /* ESERCIZIO 10 — Cerca un articolo
    Array prodotti = ['Penna', 'Quaderno', 'Zaino'].
    cercato = 'Zaino'.
