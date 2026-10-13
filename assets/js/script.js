@@ -98,7 +98,7 @@ let totale;
 const prezzo = 20;
 const spedizione = 9.99;
 
-if (prezzo >= 50 ) {
+if (prezzo >= 50) {
    console.log(' spedizione gratuita')
 } else if (prezzo < 50) {
    console.log(`Totale carrello: ${prezzo}€ - Spedizione:${spedizione}€  — Totale finale: ${prezzo + spedizione}€`)
@@ -116,10 +116,10 @@ console.log(totale)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const array =[ 42, 'ciao' , true];
-if( array[0] === 42){
+const array = [42, 'ciao', true];
+if (array[0] === 42) {
    console.log(' ${array.[i]} e un numero');
-}else if(array[0] !== 42) {
+} else if (array[0] !== 42) {
    console.log('${array.[i]} non e un numero');
 }
 
@@ -130,8 +130,8 @@ if( array[0] === 42){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let vuoto=[]
-vuoto.push(1,2,3,4,5)
+let vuoto = []
+vuoto.push(1, 2, 3, 4, 5)
 
 console.log(vuoto)
 console.log(vuoto.length)
@@ -146,9 +146,9 @@ console.log(vuoto.length)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let oggetti=['Penna', 'Quaderno', 'Zaino', 'Astuccio']
+let oggetti = ['Penna', 'Quaderno', 'Zaino', 'Astuccio']
 
-oggetti.splice(1,1,'Diario')
+oggetti.splice(1, 1, 'Diario')
 
 console.log(oggetti)
 /* ESERCIZIO 10 — Cerca un articolo
@@ -159,10 +159,18 @@ console.log(oggetti)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-if(oggetti.includes('Zaino')){
-   console.log()
+let prodotti = ['Penna1', 'Quaderno1', 'Zaino1']
+
+if (prodotti.includes('Zaino1')) {
+   console.log(`${prodotti[2]} è in carrello: true`)
 }
 
+if (prodotti.includes('Zaino1')){
+   console.log(prodotti.indexOf('Zaino1'))
+}else {
+   console.log('Non in carrello')
+}
+console.log(prodotti)
 /* ESERCIZIO 11 — Lista utenti
    Array utenti di 3 oggetti { nome, eta }.
    Con un for, stampa ogni utente: 'Mario (25 anni)'.
