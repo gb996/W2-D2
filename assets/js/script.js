@@ -13,11 +13,25 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const persona = {
+   nome: 'Mario',
+   cognome: 'Rossi',
+   eta: 25,
+   citta: 'Roma',
+}
+
+console.log(`${persona.nome} ${persona.cognome}, ${persona.eta} anni , vive a ${persona.citta}`)
+
+
+
 /* ESERCIZIO 2 — Aggiungi e rimuovi
    Sull'oggetto 'persona': aggiungi 'email', poi rimuovi 'eta'.
    Stampa l'oggetto risultante.
 */
+persona['email'] = 'email';
+delete persona.eta;
 
+console.log(persona)
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 3 — Oggetto annidato
@@ -26,6 +40,16 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const utente = {
+   indirizzo: {
+      via: 'manzoni',
+      citta: 'Roma',
+      cap: '12345',
+   }
+}
+console.log(utente.indirizzo.cap)
+
+
 
 /* ESERCIZIO 4 — Bracket dinamica
    Sull'oggetto 'persona', variabile chiave = 'nome'.
@@ -33,6 +57,10 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+delete persona.eta;
+console.log(persona)
+let nome1 = 'nome';
+console.log(persona[nome1]);
 
 /* ESERCIZIO 5 — Numero più grande
    Tre numeri a, b, c.
@@ -40,6 +68,21 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+let a = 6;
+let b = 9;
+let c = 16;
+
+
+if (a === b && b === c) {
+   console.log('Pareggio')
+} else if (a > b && a > c) {
+   console.log('a')
+} else if (b > a && b > c) {
+   console.log('b')
+} else if (c > a && c > b) {
+   console.log('c')
+}
 
 /* ESERCIZIO 6 — E-commerce: spedizione
    Variabile 'totale'.
@@ -49,6 +92,7 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
 
 /* ESERCIZIO 7 — typeof check
    Crea un array con 3 valori diversi (es. [42, 'ciao', true]).
