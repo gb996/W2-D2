@@ -146,10 +146,11 @@ console.log(vuoto.length)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let zaino=['Penna', 'Quaderno', 'Zaino', 'Astuccio']
+let oggetti=['Penna', 'Quaderno', 'Zaino', 'Astuccio']
 
+oggetti.splice(1,1,'Diario')
 
-console.log(zaino)
+console.log(oggetti)
 /* ESERCIZIO 10 — Cerca un articolo
    Array prodotti = ['Penna', 'Quaderno', 'Zaino'].
    cercato = 'Zaino'.
@@ -158,6 +159,9 @@ console.log(zaino)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+if(oggetti.includes('Zaino')){
+   console.log()
+}
 
 /* ESERCIZIO 11 — Lista utenti
    Array utenti di 3 oggetti { nome, eta }.
