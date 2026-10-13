@@ -123,7 +123,16 @@ if (typeof array[0] === 23){
    console.log(`${array[0] } non e un numero`)
 }
 
-
+if (typeof array[1] === 23){
+   console.log(`${array[1] } e un numero`)
+}else{
+   console.log(`${array[1] } non e un numero`)
+}
+if (typeof array[2] === 23){
+   console.log(`${array[2] } e un numero`)
+}else{
+   console.log(`${array[2] } non e un numero`)
+}
 /* ESERCIZIO 8 — Array dei numeri
    Array vuoto. Aggiungi 1..5 con push. Aggiungi 0 all'inizio con unshift.
    Stampa array e length.
